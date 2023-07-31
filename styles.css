@@ -2,13 +2,106 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-image: url(./images/landing_page.jpg);
+    background-size: 60%;
+}
+/* HEADER */
+.header--container {
+    max-height: 60px;
+    background-color: rgb(192, 61, 10);
+}
+.header--container > h4 {
+    text-align: center;
+    color: rgb(153, 141, 127);
+    font-size: 36px;
+    letter-spacing: 10px;
+    padding: 6px;
+}
+.header--container > h4 > span {
+    color: rgb(255, 255, 255);
+}
+/* SECTION--HERO */
+.hero--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 10px 0px 10px;
+    min-height: 10vh;
+
+}
+.hero--text--container {
+    background-color: rgb(255, 255, 255, 0.8);
+    line-height:  2.0;
+    display: flex;
+    flex-direction: column;
+}
+.hero--text--container > h4 {
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+}
+.hero--text--container > p {
+    font-size: 21px;
+    padding: 30px;
+}
+.hero--text--container > p > span {
+    font-weight: bold;
+    color: rgb(192, 61, 10);
+}
+.hero--text--container > p > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(192, 61, 10);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.hover:hover {
+    background-color: rgb(157, 144, 144);
+    box-shadow: 0 8px 16px 0 rgb(192, 61, 10);;
+}
+.hero--text--container > button {
+    background-color: rgb(192, 61, 10);
+    margin: 10px;
+    border: 0;
+    border-radius: 5px;
+    align-items : center;
+    max-width: 300px;
+    align-self: center;
+
+}
+.hero--text--container > button > h5 {
+    text-align: center;
+    font-size: 21px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+.hero--img {
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
-body {
-    background-image: url(landing_page.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.grind {
+
+#grid--container {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.grid--items {
+    flex: 0 0 150px;
+    background-color: rgba(237, 134, 8, 0.8);
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+.grid--items > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#none {
+    display: none;
 }
