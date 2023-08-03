@@ -1,0 +1,42 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Bungee Spice', cursive;
+    /* background-color: blueviolet; */
+ }
+.main--container {
+    background-image: url(../images/project1.jpg);
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.drumkit--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh; /*this set the height of the container to the whole webpage hences allowing centering it  */
+    margin: 10px;
+}
+.key {
+    border: 1px solid rgb(0, 6, 26);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(236, 236, 226, 0.8);
+    font-size: 36px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    text-shadow: 0 0 .5rem rgb(1, 30, 57);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
